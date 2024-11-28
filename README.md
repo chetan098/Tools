@@ -16,9 +16,11 @@ This repository aims to provide a comprehensive collection of Linux tools that c
 
 ## Tools Included
 
-- **Tool 1**: Description of tool 1 and its purpose.
-- **Tool 2**: Description of tool 2 and its purpose.
-- **Tool 3**: Description of tool 3 and its purpose.
+- **Tool 1**: iptables.
+- **Tool 2**: metaspolit.
+- **Tool 3**: nmap.
+- **Tool 4**: sqlmap.
+- **Tool 5**: hydra.
 - (Add more tools as necessary)
 
 ## Usage
