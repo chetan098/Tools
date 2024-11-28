@@ -4,25 +4,25 @@ This document contains useful `iptables` commands for managing network traffic.
 
 ## $sudo su
 ## 1. Checking the active rules of iptables
-$ iptables -L
+        $ iptables -L
 
 ## 2. Allowing a particular IP
-$ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1 -j ACCEPT
+      $ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1 -j ACCEPT
 
 ## 3. Allowing all IPs
-$ iptables -A INPUT -p tcp --dport 21 -j ACCEPT
+      $ iptables -A INPUT -p tcp --dport 21 -j ACCEPT
 
 ## 4. Allowing internal network
-$ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1/24 -j ACCEPT
+      $ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1/24 -j ACCEPT
 
 ## 5. Disallowing a particular IP
-$ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1 -j DROP
+      $ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1 -j DROP
 
 ## 6. Disallowing all users
-$ iptables -A INPUT -p tcp --dport 21 -j DROP
+      $ iptables -A INPUT -p tcp --dport 21 -j DROP
 
 ## 7. Disallowing particular internal networks only
-$ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1 -j DROP
+      $ iptables -A INPUT -p tcp --dport 21 -s 192.168.107.1 -j DROP
 
 ## 8. Deleting all the rules
-$ iptables -F
+      $ iptables -F
